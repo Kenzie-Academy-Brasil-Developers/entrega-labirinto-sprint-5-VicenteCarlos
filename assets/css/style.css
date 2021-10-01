@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+
+.master-cont {
+    display: flex;
+}
+
+.master-cont figure  {
+    margin: 6vh 50vw;
+    display: none;
+}
+
+.master-cont figure figcaption {
+    color: rgb(146, 0, 102);
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+}
+
+.parede, .start, .end {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+}
+
+.parede {
+    background-color: rgb(77, 0, 54);
+}
+
+.rua {
+    background-color: black;
+}
+
+.start, .end {
+    display: flex;
+    background-color: black;
+}
+
+.jogador {
+    background-color: rgb(146, 0, 102);
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 100%;
+    transition: 0.5s;
+}
