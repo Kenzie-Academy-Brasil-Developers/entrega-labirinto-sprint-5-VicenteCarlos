@@ -67,12 +67,18 @@ document.addEventListener("keydown", event => {
             eX -= 1;
         } else if (map[eY][eX]==="F")  {
             figure.style.display = "initial"
+        } else if (map[eY][eX]===map[8][21]) {
+            boxLeft -= 40;
+            eX -= 1;
         }
         jogador.style.left = `${boxLeft}px`
     } else if (getKeyboard === "ArrowLeft") {
         boxLeft -= 40;
         eX -= 1;
         if (map[eY][eX]==="W") {
+            boxLeft += 40;
+            eX += 1;
+        } else if (map[eY][eX]===map[9][-1]) {
             boxLeft += 40;
             eX += 1;
         }
